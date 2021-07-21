@@ -31,7 +31,7 @@ public class SetTest {
     @DisplayName("Set의 size() 메소드를 활용해 Set의 크기를 확인")
     @Test
     void checkSize(){
-        assertThat(numbers.size()).isEqualTo(4);
+        assertThat(numbers.size()).isEqualTo(3);
     }
 
     @DisplayName("Set에서 특정 값의 존재 여부를 확인 (일반적인 방법)")
