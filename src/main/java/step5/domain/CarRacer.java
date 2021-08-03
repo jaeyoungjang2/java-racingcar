@@ -11,7 +11,6 @@ public class CarRacer {
     public CarRacer(String carName) {
         checkValidCar(carName);
         getNewCar(carName);
-
     }
     private void getNewCar(String carName) {
         car = new Car(INIT_START_POSITION, carName);
