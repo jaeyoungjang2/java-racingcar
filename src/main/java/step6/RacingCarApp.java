@@ -16,10 +16,10 @@ public class RacingCarApp {
 
         ResultView.printResultGuideMessage();
         RacingGame racingGame = new RacingGame(cars, tryNumber);
-        cars = racingGame.run();
-
         Referee referee = new Referee(cars);
-        referee.calculateResults();
-        ResultView.printWinnerCars(referee.getWinnerCars());
+        racingGame.run(referee);
+
+        ResultView.printRoundByResults(referee.calculateRoundByResults());
+        ResultView.printWinnerCars(referee.calculateLastResults());
     }
 }

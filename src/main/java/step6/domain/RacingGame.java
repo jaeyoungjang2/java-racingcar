@@ -11,15 +11,12 @@ public class RacingGame {
         this.tryNumber = tryNumber;
     }
 
-    public Cars run() {
-        ResultView.printCurrentPosition(cars);
+    public void run(Referee referee) {
+        referee.recordCurrentMatchResult(cars);
         while (!tryNumber.finish()) {
             cars.runRacingGame(tryNumber);
-            ResultView.printCurrentPosition(cars);
+            referee.recordCurrentMatchResult(cars);
             tryNumber.minus();
         }
-        return cars;
     }
-
-
 }

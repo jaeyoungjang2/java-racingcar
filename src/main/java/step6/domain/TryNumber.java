@@ -25,4 +25,8 @@ public class TryNumber {
     public void minus() {
         tryNumber--;
     }
+
+    public int getTryNumber() {
+        return tryNumber;
+    }
 }

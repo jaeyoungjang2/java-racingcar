@@ -13,6 +13,6 @@ public class RandomMoveStrategy implements MoveStrategy{
     }
 
     private int getRandomNumber() {
-        return rd.nextInt(MAX_RANDOM_NUMBER) + 1;
+        return RD.nextInt(MAX_RANDOM_NUMBER) + 1;
     }
 }
