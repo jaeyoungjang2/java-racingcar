@@ -5,7 +5,7 @@ import java.util.Random;
 public class RandomMoveStrategy implements MoveStrategy{
     private static final int MAX_RANDOM_NUMBER = 9;
     private static final int MOVE_THRETHOLD = 4;
-    private static final Random rd = new Random();
+    private static final Random RD = new Random();
 
     @Override
     public boolean move() {
