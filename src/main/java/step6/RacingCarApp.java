@@ -7,8 +7,6 @@ import step6.domain.TryNumber;
 import step6.view.InputView;
 import step6.view.ResultView;
 
-import java.util.ArrayList;
-
 public class RacingCarApp {
     public static void main(String[] args) {
         Cars cars = new Cars(InputView.requireCarName());

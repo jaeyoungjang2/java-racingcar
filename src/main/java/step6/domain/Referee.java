@@ -9,7 +9,7 @@ public class Referee {
     private final Cars cars;
 
     private List<String> winnerCars = new ArrayList<>();
-    private List<Map<String, Integer>> resultByRound = new ArrayList<>();
+    private List<Map<CarName, CarPosition>> resultByRound = new ArrayList<>();
     private int maxPosition = 0;
 
     public Referee(Cars cars) {
