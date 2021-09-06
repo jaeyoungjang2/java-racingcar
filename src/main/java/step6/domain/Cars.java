@@ -20,8 +20,7 @@ public class Cars {
     }
 
     public void runRacingGame(TryNumber tryNumber) {
-        cars.stream()
-                .forEach(car -> car.move(new RandomMoveStrategy()));
+        cars.forEach(car -> car.move(new RandomMoveStrategy()));
     }
 
     public List<Car> getCars() {
