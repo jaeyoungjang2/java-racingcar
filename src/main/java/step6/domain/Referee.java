@@ -24,13 +24,11 @@ public class Referee {
 
     private void findWinner() {
         cars.getCars()
-                .stream()
                 .forEach(car -> findWinnerCar(car));
     }
 
     private void findMaxposition() {
         cars.getCars()
-                .stream()
                 .forEach(car -> findMaxPositionByCar(car));
     }
 
@@ -50,11 +48,11 @@ public class Referee {
         resultByRound.add(new HashMap<>());
         for (Car car: cars.getCars()) {
             int tryNumber = resultByRound.size() - 1;
-            resultByRound.get(tryNumber).put(car.getCarName(), car.getPosition());
+            resultByRound.get(tryNumber).put(new CarName(car.getCarName()), new CarPosition(car.getPosition()));
         }
     }
 
-    public List<Map<String, Integer>> calculateRoundByResults() {
+    public List<Map<CarName, CarPosition>> calculateRoundByResults() {
         return resultByRound;
     }
 }
